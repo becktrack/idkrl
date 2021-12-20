@@ -1,6 +1,10 @@
 import socket
 from threading import Thread
 
+hostname = socket. gethostname()
+IPAddr = socket. gethostbyname(hostname)
+print("Your Computer IP Address is:" + IPAddr)
+
 # server's IP address
 SERVER_HOST = "0.0.0.0"
 SERVER_PORT = 5002 # port we want to use
